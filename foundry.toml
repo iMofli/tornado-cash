@@ -3,4 +3,10 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+[profile.sepolia]
+rpc_url="https://ethereum-sepolia-rpc.publicnode.com"
+etherscan_api_key="CG8GEQ4SMP7823GF5AGRN7NRJWIBBQHP3E"
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[profile.default.dependencies]
+openzeppelin = { git = "https://github.com/OpenZeppelin/openzeppelin-contracts", tag = "v3.4.1" }
